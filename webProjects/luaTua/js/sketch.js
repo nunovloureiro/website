@@ -233,7 +233,7 @@ var sketch1 = function(p){
 
   p.chooseWord = function(newText) {
     if (typeof newText !== 'string') {
-      console.error('Invalid newText:', newText);
+      // console.error('Invalid newText:', newText);
       return ''; // or handle the error in an appropriate way
     }
 
@@ -443,10 +443,10 @@ var sketch3 = function(p){
     p.textFont = p.font;
     p.textCanvas.textAlign(p.CENTER);
     p.textCanvas.fill(255);
-    console.log("width: ",p.Xaxis);
-    console.log("height: ",p.Yaxis);
+    // console.log("width: ",p.Xaxis);
+    // console.log("height: ",p.Yaxis);
     let conta = p.Xaxis/p.Yaxis;
-    console.log("conta: ", conta);
+    // console.log("conta: ", conta);
 
     if(p.Xaxis / p.Yaxis < 1){
       p.isPhone = 1;
